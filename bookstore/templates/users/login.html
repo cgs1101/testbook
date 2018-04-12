@@ -10,12 +10,14 @@
                 password = $('#pwd').val();
                 csrf = $('input[name="csrfmiddlewaretoken"]').val();
                 remember = $('input[name="remember"]').prop('checked');
+                vc = $('input[name="vc"]').val();
                 //发送ajax请求
                 params = {
                     'username':username,
                     'password':password,
                     'csrfmiddlewaretoken':csrf,
-                    'remember':remember
+                    'remember':remember,
+                    'verifycode':vc
                 };
 
                 $.post('/user/login_check/',params,function(data) {
@@ -58,14 +60,22 @@
 						<input type="text" id="username" name="username" class="name_input" placeholder="请输入用户名" value="{{ username }}">
 						<div class="user_error">输入错误</div>
 						<input type="password" id="pwd" name="password" class="pass_input" placeholder="请输入密码">
-						<div class="pwd_error">输入错误</div>
+                        <div class="pwd_error">输入错误</div>
 						<div class="more_input clearfix">
 							<input type="checkbox" name="remember" {{ checked }}>
 							<label>记住用户名</label>
 							<a href="#">忘记密码</a>
 						</div>
+
                     <button id="btnLogin"  value="登录" class="input_submit">login</button>
-				</div>
+
+                </div>
+            <div style="top: 100px;width: 50px; position: absolute;">
+                        <input type="text" id="vc" name="vc">
+                        <img id="verifycode" src="/user/verifycode/" alt="CheckCode">
+
+                    </div>
+
 			</div>
 		</div>
 	</div>

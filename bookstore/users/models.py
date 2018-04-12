@@ -24,6 +24,14 @@ class PassportManger(models.Manager):
 		except:
 			passport = None
 		return passport
+	def check_passport(self,username):
+		try:
+			passport = self.get(username=username)
+		except self.model.DoesNotExist:
+			passport =None
+		if passport:
+			return  True
+		return False
 
 class Passport(BaseModel):
 	#用户模型类
@@ -48,7 +56,7 @@ class AddressManager(models.Manager):
 			addr=None
 		return addr
 
-	def add_one_address(self,passport_id,recipient_name,recipient_addr,zip_code,recipient_phone):
+	def add_one_address(self,passport_id,recipient_name,recipient_addr,zip_code,reciplent_phone):
 		'''添加收货地址'''
 		#判断用户是否有默认收货地址
 		addr = self.get_default_address(passport_id=passport_id)
@@ -62,9 +70,9 @@ class AddressManager(models.Manager):
 		addr = self.create(
 			passport_id=passport_id,
 			recipient_name=recipient_name,
-			recipient_addr = recipient_addr,
+			reciplent_addr = recipient_addr,
 			zip_code = zip_code,
-			recipient_phone = recipient_phone,
+			reciplent_phone = reciplent_phone,
 			is_default = is_default
 		)
 		return addr
