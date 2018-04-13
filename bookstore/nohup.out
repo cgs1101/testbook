@@ -1,0 +1,54 @@
+[2018-04-13 13:51:43 +0800] [2031] [INFO] Starting gunicorn 19.7.1
+[2018-04-13 13:51:43 +0800] [2031] [INFO] Listening at: http://0.0.0.0:8000 (2031)
+[2018-04-13 13:51:43 +0800] [2031] [INFO] Using worker: sync
+[2018-04-13 13:51:43 +0800] [2034] [INFO] Booting worker with pid: 2034
+[2018-04-13 13:51:43 +0800] [2035] [INFO] Booting worker with pid: 2035
+[2018-04-13 13:51:43 +0800] [2036] [INFO] Booting worker with pid: 2036
+[2018-04-13 14:00:12 +0800] [2044] [INFO] Starting gunicorn 19.7.1
+[2018-04-13 14:00:12 +0800] [2044] [INFO] Listening at: http://0.0.0.0:8000 (2044)
+[2018-04-13 14:00:12 +0800] [2044] [INFO] Using worker: sync
+[2018-04-13 14:00:12 +0800] [2047] [INFO] Booting worker with pid: 2047
+[2018-04-13 14:00:12 +0800] [2048] [INFO] Booting worker with pid: 2048
+[2018-04-13 14:00:12 +0800] [2050] [INFO] Booting worker with pid: 2050
+[2018-04-13 06:00:15 +0000] [2034] [INFO] Parent changed, shutting down: <Worker 2034>
+[2018-04-13 06:00:15 +0000] [2034] [INFO] Worker exiting (pid: 2034)
+[2018-04-13 06:00:15 +0000] [2035] [INFO] Parent changed, shutting down: <Worker 2035>
+[2018-04-13 06:00:15 +0000] [2035] [INFO] Worker exiting (pid: 2035)
+[2018-04-13 06:00:15 +0000] [2036] [INFO] Parent changed, shutting down: <Worker 2036>
+[2018-04-13 06:00:15 +0000] [2036] [INFO] Worker exiting (pid: 2036)
+[2018-04-13 14:02:01 +0800] [2053] [INFO] Starting gunicorn 19.7.1
+[2018-04-13 14:02:01 +0800] [2053] [INFO] Listening at: http://0.0.0.0:8000 (2053)
+[2018-04-13 14:02:01 +0800] [2053] [INFO] Using worker: sync
+[2018-04-13 14:02:01 +0800] [2056] [INFO] Booting worker with pid: 2056
+[2018-04-13 14:02:01 +0800] [2057] [INFO] Booting worker with pid: 2057
+[2018-04-13 14:02:01 +0800] [2059] [INFO] Booting worker with pid: 2059
+[2018-04-13 06:11:48 +0000] [2056] [INFO] Parent changed, shutting down: <Worker 2056>
+[2018-04-13 06:11:48 +0000] [2056] [INFO] Worker exiting (pid: 2056)
+[2018-04-13 06:11:48 +0000] [2057] [INFO] Parent changed, shutting down: <Worker 2057>
+[2018-04-13 06:11:48 +0000] [2057] [INFO] Worker exiting (pid: 2057)
+[2018-04-13 06:11:48 +0000] [2059] [INFO] Parent changed, shutting down: <Worker 2059>
+[2018-04-13 06:11:48 +0000] [2059] [INFO] Worker exiting (pid: 2059)
+[2018-04-13 06:13:14 +0000] [2047] [INFO] Parent changed, shutting down: <Worker 2047>
+[2018-04-13 06:13:14 +0000] [2047] [INFO] Worker exiting (pid: 2047)
+[2018-04-13 06:13:14 +0000] [2048] [INFO] Parent changed, shutting down: <Worker 2048>
+[2018-04-13 06:13:14 +0000] [2048] [INFO] Worker exiting (pid: 2048)
+[2018-04-13 06:13:14 +0000] [2050] [INFO] Parent changed, shutting down: <Worker 2050>
+[2018-04-13 06:13:15 +0000] [2050] [INFO] Worker exiting (pid: 2050)
+[2018-04-13 14:14:14 +0800] [2106] [INFO] Starting gunicorn 19.7.1
+[2018-04-13 14:14:14 +0800] [2106] [INFO] Listening at: http://0.0.0.0:8000 (2106)
+[2018-04-13 14:14:14 +0800] [2106] [INFO] Using worker: sync
+[2018-04-13 14:14:14 +0800] [2109] [INFO] Booting worker with pid: 2109
+[2018-04-13 14:14:14 +0800] [2111] [INFO] Booting worker with pid: 2111
+[2018-04-13 14:14:14 +0800] [2112] [INFO] Booting worker with pid: 2112
+[2018-04-13 06:45:51 +0000] [2109] [INFO] Parent changed, shutting down: <Worker 2109>
+[2018-04-13 06:45:51 +0000] [2109] [INFO] Worker exiting (pid: 2109)
+[2018-04-13 06:45:51 +0000] [2111] [INFO] Parent changed, shutting down: <Worker 2111>
+[2018-04-13 06:45:51 +0000] [2111] [INFO] Worker exiting (pid: 2111)
+[2018-04-13 06:45:51 +0000] [2112] [INFO] Parent changed, shutting down: <Worker 2112>
+[2018-04-13 06:45:51 +0000] [2112] [INFO] Worker exiting (pid: 2112)
+[2018-04-13 14:46:43 +0800] [2430] [INFO] Starting gunicorn 19.7.1
+[2018-04-13 14:46:43 +0800] [2430] [INFO] Listening at: http://0.0.0.0:8000 (2430)
+[2018-04-13 14:46:43 +0800] [2430] [INFO] Using worker: sync
+[2018-04-13 14:46:43 +0800] [2433] [INFO] Booting worker with pid: 2433
+[2018-04-13 14:46:43 +0800] [2434] [INFO] Booting worker with pid: 2434
+[2018-04-13 14:46:43 +0800] [2435] [INFO] Booting worker with pid: 2435

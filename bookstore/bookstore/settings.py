@@ -89,7 +89,7 @@ DATABASES = {
         'HOST':'localhost',
         'PORT':3306,
         'USER':'root',
-        'PASSWORD':'atguigu'
+        'PASSWORD':'cgs111'
     }
 }
 
@@ -111,6 +111,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
+
+#STATIC_ROOT = '/root/books/bookproject/testbook/bookstore/static1/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'collect_static')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static')
