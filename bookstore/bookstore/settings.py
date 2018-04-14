@@ -89,7 +89,7 @@ DATABASES = {
         'HOST':'localhost',
         'PORT':3306,
         'USER':'root',
-        'PASSWORD':'cgs111'
+        'PASSWORD':'atguigu'
     }
 }
 
@@ -142,6 +142,7 @@ ALIPAY_URL = 'https://openapi.alipaydev.com/gateway.do'
 
 EMAIL_BASCEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.163.com'
+EMAIL_USER_SSL = True
 EMAIL_PORT = 25
 #发送邮件的邮箱
 EMAIL_HOST_USER = '15032086039@163.com'

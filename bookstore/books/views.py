@@ -7,7 +7,7 @@ from django.core.urlresolvers import reverse
 from django.core.paginator import Paginator
 from django_redis import get_redis_connection
 
-@cache_page(60 * 15)
+# @cache_page(60 * 15)
 def index(request):
 	#显示首页
 	#查询每个种类的3个新品信息和4个销量最好的商品信息

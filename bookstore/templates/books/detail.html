@@ -176,7 +176,7 @@
 	</div>
 
 	<div class="book_detail_con clearfix">
-		<div class="book_detail_pic fl"><img src="/static/images/book_detail.jpg"></div>
+		<div class="book_detail_pic fl"><img src="{% static books.image %}"></div>
 
 		<div class="book_detail_list fr">
 			<h3>{{ books.name }}</h3>
@@ -222,7 +222,7 @@
 				<ul>
                     {% for book in books_li %}
 					<li>
-						<a href="#">
+						<a href="{% url 'books:detail' books_id=book.id %}">
                             <img src="{% static book.image %}">
                         </a>
 						<h4><a href="#">{{ books.name }}</a></h4>
@@ -233,20 +233,23 @@
 			</div>
 		</div>
 
-		<div class="r_wrap fr clearfix">
-			<ul class="detail_tab clearfix">
-				<li id="detail" class="active">商品介绍</li>
-				<li id="comment">评论</li>
-			</ul>
-            <div id="book_comment"></div>
-			<div id="book_detail" class="tab_content">
-				<dl>
-					<dt>商品详情：</dt>
-					<dd>{{ books.detail | safe }} </dd>
-				</dl>
-			</div>
+		   <div class="r_wrap fr clearfix">
+        <ul class="detail_tab clearfix">
+            <li class="active" id="detail">商品介绍</li>
+            <li id="comment">评论</li>
+        </ul>
 
-		</div>
+        <div class="tab_content" >
+            <dl id="book_detail">
+                <dt>商品详情：</dt>
+                <dd>{{ books.detail | safe }}</dd>
+            </dl>
+            <dl id="book_comment" style="display: none; font-size: 15px; color: #0a0a0a">
+                <dt>用户评论:</dt>
+                <dd></dd>
+            </dl>
+        </div>
+    </div>
 	</div>
     <div class="add_jump"></div>
  <script type="text/javascript">
